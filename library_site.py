@@ -34,7 +34,7 @@ class Book(db.Model):
          self.available = available
 
      def __repr__(self):
-        return f"ID: {self.id} Book name: {self.title}, Author name: {self.author}, Publisher name: {self.publisher}, Availability: {self.available}"
+        return "ID: {} Book name: {}, Author name: {}, Publisher name: {}, Availability: {}".format(self.id, self.title, self.author, self.publisher, self.available)
 
 ## VIEW FUNCTIONS -- HAVE FORMS
 db.create_all()
