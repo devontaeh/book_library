@@ -41,7 +41,7 @@ def create_database():
     with app.app_context():
         db.create_all()
 
-db.crea
+# db.crea
 @app.route('/')
 def index():
     return render_template('home.html')
